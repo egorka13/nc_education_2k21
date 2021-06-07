@@ -86,7 +86,7 @@ gulp.task('serve', function () {
     gulp.watch('./src/assets/scripts/*.js').on('change', series('js'))
     gulp.watch('./src/index.html').on('change', series('html'))
 
-    gulp.watch('./dist/style.css').on('change', browserSync.reload)
+    gulp.watch('./dist/main.css').on('change', browserSync.reload)
     gulp.watch('./dist/index.html').on('change', browserSync.reload)
     gulp.watch('./dist/script.js').on('change', browserSync.reload)
 })
